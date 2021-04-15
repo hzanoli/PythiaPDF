@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  pythiapdf:
+    image: hzanoli/pythiapdf
+    entrypoint: /bin/sh
+    stdin_open: true 
+    tty: true
+
+    volumes:
+    - ./PythiaPDF:/PythiaPDF
+    working_dir: /PythiaPDF

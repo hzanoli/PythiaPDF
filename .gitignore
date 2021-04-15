@@ -1,3 +1,17 @@
+# MacOS
+.DS_Store
+
+# VSCode
+.vscode
+
+# CLion
+cmake-build-debug
+.clion.source.upload.marker
+.idea
+
+# build
+build
+
 # Prerequisites
 *.d
 
