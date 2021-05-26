@@ -1,6 +1,6 @@
 FROM fedora:35
 
-RUN dnf install -y  \
+RUN yum install -y  \
     automake-1.16.2 \ 
     boost-devel-1.75.0 \
     cmake-3.19.7 \
