@@ -16,4 +16,4 @@ target_link_libraries(pythiapdf_base PUBLIC ROOT::Hist ${PYTHIA8_LIBRARIES})
 install(TARGETS pythiapdf_base 
         LIBRARY DESTINATION lib
         INCLUDES DESTINATION include)
-install()
+

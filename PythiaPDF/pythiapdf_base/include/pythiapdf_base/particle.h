@@ -15,7 +15,13 @@ enum class PDGCode {
   kBeauty = 5,
   kTop = 6,
   kGluon = 21,
-  kPhoton = 22
+  kPhoton = 22,
+  kDownBar = -1,
+  kUpBar = -2,
+  kStrangeBar = -3,
+  kCharmBar = -4,
+  kBeautyBar = -5,
+  kTopBar = -6
 };
 
 const std::map<PDGCode, std::string> particle_names = {
@@ -26,7 +32,13 @@ const std::map<PDGCode, std::string> particle_names = {
     {PDGCode::kBeauty, "b"},
     {PDGCode::kTop, "t"},
     {PDGCode::kGluon, "g"},
-    {PDGCode::kPhoton, "\\gamma"}
+    {PDGCode::kPhoton, "\\gamma"},
+    {PDGCode::kDownBar, "dbar"},
+    {PDGCode::kUpBar, "ubar"},
+    {PDGCode::kStrangeBar, "sbar"},
+    {PDGCode::kCharmBar, "cbar"},
+    {PDGCode::kBeautyBar, "bbar"},
+    {PDGCode::kTopBar, "tbar"},
 };
 
 }

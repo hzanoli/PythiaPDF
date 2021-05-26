@@ -1,5 +1,5 @@
-#include "pythiapdf_base/pdfplot.h"
 #include "boost/program_options.hpp"
+#include "pythiapdf_base/pdfplot.h"
 
 namespace po = boost::program_options;
 namespace ppb = pythiapdf::base;
@@ -16,7 +16,9 @@ int main(int argc, char **argv) {
   std::vector<pdg::PDGCode> pdg_codes{
       {pdg::PDGCode::kDown, pdg::PDGCode::kUp, pdg::PDGCode::kStrange,
        pdg::PDGCode::kCharm, pdg::PDGCode::kBeauty, pdg::PDGCode::kTop,
-       pdg::PDGCode::kGluon, pdg::PDGCode::kPhoton}};
+       pdg::PDGCode::kGluon, pdg::PDGCode::kPhoton, pdg::PDGCode::kDownBar,
+       pdg::PDGCode::kUpBar, pdg::PDGCode::kStrangeBar, pdg::PDGCode::kCharmBar,
+       pdg::PDGCode::kBeautyBar, pdg::PDGCode::kTopBar}};
 
   options.add_options()("help", "Produce help message.");
 

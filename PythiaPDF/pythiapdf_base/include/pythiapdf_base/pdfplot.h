@@ -64,19 +64,17 @@ class PDFPlot {
 
 double ColorFactor(pdg::PDGCode pdg);
 
+std::string ScapeSpecialChars(const std::string& str);
+
 std::vector<PDFPlot> MakePDFPlots(const std::string& pdf_name,
                                   double momentum_transfer,
                                   const std::vector<pdg::PDGCode> pdg_codes);
 
-void SavePlots(const std::string& pdf_name, double momentum_transfer,
-               std::vector<PDFPlot>& plots);
+void SavePlots(std::vector<PDFPlot>& plots);
 
 void RunPDFPlots(const std::string& pdf_name, double momentum_transfer,
                  const std::vector<pdg::PDGCode>& pdg_codes);
-// std::vector<pdg::PDGCode>(
-//         {pdg::PDGCode::kDown, pdg::PDGCode::kUp, pdg::PDGCode::kStrange,
-//          pdg::PDGCode::kCharm, pdg::PDGCode::kBeauty, pdg::PDGCode::kTop,
-//          pdg::PDGCode::kGluon, pdg::PDGCode::kPhoton}
+
 }  // namespace base
 }  // namespace pythiapdf
 

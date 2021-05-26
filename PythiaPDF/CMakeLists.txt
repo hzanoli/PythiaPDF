@@ -7,6 +7,8 @@ project(PythiaPDF VERSION 1.0.0
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules")
 
+set(CMAKE_CXX_STANDARD 14)
+
 #include BOOST
 find_package(Boost 1.69 COMPONENTS program_options REQUIRED)
 
